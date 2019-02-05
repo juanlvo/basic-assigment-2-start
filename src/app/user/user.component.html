@@ -1,3 +1,19 @@
-<p>
-  user works!
-</p>
+<div>
+  <ol>
+    <li><input
+      type="text"
+      class="form-control"
+      [(ngModel)]="Username">
+    </li>
+    <li>Username: {{ Username }}</li>
+    <li>
+      <button 
+        id="data.submit"
+        class="btn btn-primary"
+        [disabled]="!Username"
+        (click)="Username = null"
+        >Submit
+      </button>
+    </li>
+  </ol>
+</div>
