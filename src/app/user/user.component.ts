@@ -16,16 +16,4 @@ export class UserComponent implements OnInit {
   onUpdateUsername(event: Event) {
     this.username = (<HTMLInputElement>event.target).value;
   }
-
-  emptyUsername() {
-    if (this.username == null) {
-      return false;
-    } else {
-      return true;
-    }
-  }
-
-  setNullUsername() {
-    this.username = null;
-  }
 }

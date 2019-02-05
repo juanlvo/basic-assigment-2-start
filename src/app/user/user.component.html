@@ -3,16 +3,18 @@
     <li><input
       type="text"
       class="form-control"
-      [(ngModel)]="Username">
+      [(ngModel)]="username">
     </li>
-    <li>Username: {{ Username }}</li>
+    <li>
+      <p>Username: {{ username }}</p>
+     </li>
     <li>
       <button 
         id="data.submit"
         class="btn btn-primary"
-        [disabled]="!Username"
-        (click)="Username = null"
-        >Submit
+        [disabled]="!username"
+        (click)="username = null"
+        >Reset User
       </button>
     </li>
   </ol>
